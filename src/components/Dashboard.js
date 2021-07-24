@@ -55,7 +55,8 @@ const Dashboard = () => {
  <div className="col-md-9">
      <div className="stocklens-view">
      
-       {component}
+       {/* {component} */}
+       <Branches station={station} />
       <p className="text-danger">
        USER: {username}
       </p>
