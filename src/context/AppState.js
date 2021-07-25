@@ -17,7 +17,7 @@ axios.interceptors.request.use(
 const AppState = (props) => {
  const [isAuth, setIsAuth] = useState(true);
  const [login, setLogin] = useState(true);
- const [component,setComponent] =  useState("Branches");
+ const [component,setComponent] =  useState("StationCreate");
  const [userData, setUserData] = useState('');
  const handleGet = () => {
   axios.get(`${baseurl}/auth/userContext`).then((res) => {
