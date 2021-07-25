@@ -12,7 +12,10 @@ import Stations from './Stations'
 import Products from './Products'
 import Categories from './Categories'
 import Branches from './Branches'
+import ModifyBranch from './ModifyBranch'
 import Header from './Header'
+import StationCreate from '../components/station/StationCreate'
+import StationModify from '../components/station/StationModify'
 
 
 const url = 'https://stocklens.herokuapp.com/stock-lens/api/1.0';
@@ -56,7 +59,7 @@ const Dashboard = () => {
      <div className="stocklens-view">
      
        {/* {component} */}
-       <Branches station={station} />
+       <StationCreate station={station} />
       <p className="text-danger">
        USER: {username}
       </p>
