@@ -16,6 +16,7 @@ import ModifyBranch from './ModifyBranch'
 import Header from './Header'
 import StationCreate from '../components/station/StationCreate'
 import StationModify from '../components/station/StationModify'
+import UserRoute from './UserRoute'
 
 
 const url = 'https://stocklens.herokuapp.com/stock-lens/api/1.0';
@@ -59,8 +60,11 @@ const Dashboard = () => {
      <div className="stocklens-view">
      
        {/* {component} */}
-       <StationCreate station={station} />
-      <p className="text-danger">
+       <UserRoute station={station} />
+       <Link to="userroute">
+       Link
+       </Link>
+      {/* <p className="text-danger">
        USER: {username}
       </p>
       <p className="text-primary">
@@ -73,7 +77,7 @@ const Dashboard = () => {
       <p>PMS TANKER: {pms_tank}</p>
       <p className="text-info">
        stationID: {station}
-      </p>
+      </p> */}
      </div>
  </div>
  </div>

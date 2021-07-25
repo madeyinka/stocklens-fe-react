@@ -96,12 +96,10 @@ const Signin = () => {
           <label htmlFor="sigin-password" className="form-label">Password</label>
           <input type="password" className="form-control" id="siginpassword" placeholder="Enter your Password" value={password} onChange={handlePassword} />
 </div>
-   <Link to='/dashboard' className="d-block btn btn-grand " onClick={handleSubmit}>
+   <Link to='/dashboard' className="d-block btn btn-primary " onClick={handleSubmit}>
    Login
    </Link>
-   <Button variant="primary" onClick={handleGet} > 
-   Get info
-   </Button>
+  
 
  </div>
  </div>

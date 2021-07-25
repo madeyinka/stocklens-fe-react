@@ -31,7 +31,8 @@ body{
   padding: 1rem !important;
   padding-top: 5rem !important;
    background-color: #3e4095 !important;
-   z-index: 9999;
+   /* z-index: 9999; */
+   position: static;
 }
 .bg-brand{
  background-color: #3e4095 !important;
