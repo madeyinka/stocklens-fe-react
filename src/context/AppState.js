@@ -3,7 +3,7 @@ import AppContext from './app-context'
 import axios from 'axios'
 
 const baseurl = 'https://stocklens.herokuapp.com/stock-lens/api/1.0';
-const accessToken = localStorage.getItem('accesstoken').toString();
+const accessToken = localStorage.getItem('accesstoken');
 
 axios.interceptors.request.use(
  config => {
