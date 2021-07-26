@@ -1,10 +1,11 @@
 import React,{useRef,useState,useCallback,useEffect, useContext} from 'react'
-import { Link,useHistory } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import {Button} from 'react-bootstrap'
 import './login.css';
 import chart from '../images/histogram-chart.png'
 import axios from 'axios';
 import AppContext from '../context/app-context'
+import Loading from './Loading'
 
 // import { useGlobalContext } from '../Context'
 // sXmU7KyDOi
@@ -21,11 +22,11 @@ axios.interceptors.request.use(
      }
 )
 const Signin = () => {
-     const {setLogin,handleGet,login} = useContext(AppContext);
+     const {setLogin,handleGet,login,loading,setLoading} = useContext(AppContext);
 
      const [email,setEmail] = useState('');
      const [password,setPassword] = useState('');
-     const [loading, setLoading] = useState(false);
+     // const [loading, setLoading] = useState(false);
      const [token, setToken] = useState('');
      
      const handleEmail = (e) => {
@@ -43,23 +44,25 @@ const Signin = () => {
           axios.post(`${url}/auth/login/`, { email, password }).then((res) => {
                console.log(res.data.response,res.data.error);
                setToken(res.data.response);
+               setLoading(false)
                localStorage.clear();
                localStorage.setItem('accesstoken', `${res.data.response}` );
                if(res.data.error == false) {
                     setLogin(true);
+                    
                     console.log("yeah its a happy day");
                }
                // setLogin(res.data)
           })
           
      }
-     const history = useHistory();
+     // const history = useHistory();
 
-     useEffect(() => {
-          if (login) {
-               history.push('/dashboard')
-          }
-     }, [login, history])
+     // useEffect(() => {
+     //      if (login) {
+     //           history.push('/dashboard')
+     //      }
+     // }, [login, history])
 
      // const handleGet = ()=> {
      //      axios.get(`${url}/auth/userContext`).then((res) => {
@@ -67,7 +70,15 @@ const Signin = () => {
      //      })
      // }
 
-     
+     // if(loading) {
+     //      return (
+     //           <main>
+     //           <Loading />
+     //           </main>
+     //      )
+     // }
+
+     // T1mGWL0DAn
 
  return (
   <>
