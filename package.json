@@ -1,5 +1,6 @@
 {
-  "name": "reminder",
+  "name": "stocklens",
+  "homepage":"https://stocklens-app.netlify.app/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

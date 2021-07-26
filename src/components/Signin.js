@@ -10,7 +10,7 @@ import Loading from './Loading'
 // import { useGlobalContext } from '../Context'
 // sXmU7KyDOi
 const url = 'https://stocklens.herokuapp.com/stock-lens/api/1.0';
-const accessToken = localStorage.getItem('accesstoken').toString();
+const accessToken = localStorage.getItem('accesstoken');
 
 axios.interceptors.request.use(
      config => {
