@@ -21,7 +21,7 @@ import Loading from './Loading'
 
 
 const url = 'https://stocklens.herokuapp.com/stock-lens/api/1.0';
-const accessToken = localStorage.getItem('accesstoken').toString();
+const accessToken = localStorage.getItem('accesstoken');
 
 axios.interceptors.request.use(
  config => {
