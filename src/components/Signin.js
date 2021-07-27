@@ -6,7 +6,7 @@ import chart from '../images/histogram-chart.png'
 import axios from 'axios';
 import AppContext from '../context/app-context'
 import Loading from './Loading'
-
+import {useHistory} from 'react-router-dom';
 // import { useGlobalContext } from '../Context'
 // sXmU7KyDOi
 const url = 'https://stocklens.herokuapp.com/stock-lens/api/1.0';
@@ -39,9 +39,11 @@ const Signin = () => {
      // useEffect(() => {
      //      handleSubmit();
      // }, []);
-     const handleSubmit = () => {
+     const handleSubmit = (e) => {
+          e.preventDefault();
           setLoading(true)
           axios.post(`${url}/auth/login/`, { email, password }).then((res) => {
+               setLogin(true);
                console.log(res.data.response,res.data.error);
                setToken(res.data.response);
                setLoading(false)
@@ -50,19 +52,24 @@ const Signin = () => {
                if(res.data.error == false) {
                     setLogin(true);
                     
-                    console.log("yeah its a happy day");
+                  
                }
                // setLogin(res.data)
           })
           
      }
-     // const history = useHistory();
+     const history = useHistory();
+     useEffect(() => {
+          if (localStorage.getItem('accesstoken')) {
+               setLogin(true);
+          }
+     }, [])
 
-     // useEffect(() => {
-     //      if (login) {
-     //           history.push('/dashboard')
-     //      }
-     // }, [login, history])
+     useEffect(() => {
+          if (login) {
+               history.push('/dashboard')
+          }
+     }, [login, history])
 
      // const handleGet = ()=> {
      //      axios.get(`${url}/auth/userContext`).then((res) => {

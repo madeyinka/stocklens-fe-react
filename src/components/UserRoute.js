@@ -76,52 +76,52 @@ const [isAdmin, setIsAdmin] = useState(false);
  return (
   <>
 
-   <div className="branch-container px-5 ">
+   <div className="branch-container px-5 py-3 ">
    <h2 className="text-primary text-center">
    UserRoute Form
    </h2>
    <div className="row">
    <div className="col-sm-6">
-      <div className="mb-2">
+      <div className="mb-3">
 
        <label htmlFor="identity">BranchId</label>
        <input type="text" placeholder="BranchID" className="form-control" value={identity} onChange={handleBranchID} />
 
       </div>
 
-      <div className="mb-2">
+      <div className="mb-3">
 
        <label htmlFor="fname">firstname</label>
        <input type="text" placeholder="firstname" className="form-control" value={fname} onChange={handleFname} />
 
       </div>
-      <div className="mb-2">
+      <div className="mb-3">
 
        <label htmlFor="lname">Lastname</label>
        <input type="text" placeholder="lastname" className="form-control" value={lname} onChange={handleLname} />
 
       </div>
-      <div className="mb-2">
+      <div className="mb-3">
 
        <label htmlFor="Phone">Phone</label>
        <input type="text" placeholder="Phone" className="form-control" value={phone} onChange={handlePhone} />
 
       </div>
 
-      <div className="mb-2">
+      <div className="mb-3">
        <label htmlFor="exampleFormControlInput1" className="form-label">Email address</label>
        <input type="email" className="form-control" id="exampleFormControlInput1" placeholder="name@example.com" value={email} onChange={handleEmail} />
       </div>
-      <div className="mb-2">
+      <div className="mb-3">
        <label htmlFor="sigin-password" className="form-label">Password</label>
        <input type="password" className="form-control" id="siginpassword" placeholder="Enter your Password" value={password} onChange={handlePassword} />
       </div>
-      <div className="mb-2">
+      <div className="mb-3">
        <label htmlFor="exampleFormControlInput1" className="form-label">IsAdmin?</label>
        <select className="form-select" aria-label="Admin Status" onChange={handleIsAdmin} value={isAdmin} >
         <option selected>Open this select menu</option>
         <option value="1">true</option>
-        <option value="2">false</option>
+        <option value="3">false</option>
 
        </select>
       </div>
@@ -130,50 +130,50 @@ const [isAdmin, setIsAdmin] = useState(false);
    
    
  
-    <div className="mb-2">
+    <div className="mb-3">
      <label htmlFor="exampleFormControlInput1" className="form-label">Role</label>
      <select className="form-select" aria-label="Select Role" onChange={handleRole} value={role}>
       <option>Open this select menu</option>
       <option value="1">One</option>
-      <option value="2">Two</option>
-      <option value="2">Three</option>
+      <option value="3">Two</option>
+      <option value="3">Three</option>
      </select> 
     </div>
-    <div className="mb-2">
+    <div className="mb-3">
      <label htmlFor="exampleFormControlInput1" className="form-label">Station ID</label>
      <select className="form-select" aria-label="Select Role" onChange={handleStation} value={station_id}>
       <option>Open this select menu</option>
       <option value="1">One</option>
-      <option value="2">Two</option>
-      <option value="2">Three</option>
+      <option value="3">Two</option>
+      <option value="3">Three</option>
      </select>
     </div>
-    <div className="mb-2">
+    <div className="mb-3">
      <label htmlFor="exampleFormControlInput1" className="form-label">Status</label>
      <select className="form-select" aria-label="Select Status" onChange={handleStatus} value={status}>
       <option>Open this select menu</option>
       <option value="1">One</option>
-      <option value="2">Two</option>
-      <option value="2">Three</option>
+      <option value="3">Two</option>
+      <option value="3">Three</option>
      </select>
     </div>
-   <div className="mb-2">
+   <div className="mb-3">
      <label htmlFor="exampleFormControlInput1" className="form-label">Optional File Upload</label>
-     <div className="mb-2">
+     <div className="mb-3">
       <label> Click to upload file</label>
       <input type="file" multiple  value={image_url}  onChange={handleImage} className="form-control" />
      </div>
    </div>
-   <div className="mb-2">
+   <div className="mb-3">
      <label htmlFor="exampleFormControlInput1" className="form-label">Upload Your profile documents</label>
-     <div className="mb-2">
+     <div className="mb-3">
       <label> Click to upload file</label>
       <input type="file" multiple  value={profile} onChange={handleProfile} className="form-control" />
      </div>
    </div>
    </div>
    </div>
-    <button className="btn btn-primary mb-2" onClick={handleSubmit}>
+    <button className="btn btn-primary mb-5 py-3" onClick={handleSubmit}>
      Submit
   </button>
 

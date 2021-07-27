@@ -17,7 +17,11 @@ axios.interceptors.request.use(
 const AppState = (props) => {
  const [isAuth, setIsAuth] = useState(true);
  const [login, setLogin] = useState(false);
- const [loading, setLoading] = useState(true);
+ const [loading, setLoading] = useState(false);
+ const [page,setPage] = useState("default");
+ const [message,setMessage] = useState('');
+ const [error,setError] = useState(false);
+
 
  const [component,setComponent] =  useState("StationCreate");
  const [userData, setUserData] = useState('');
@@ -29,8 +33,8 @@ const AppState = (props) => {
  }
  return (
   <AppContext.Provider value={{
-   message: 'This is from the context',
-   isAuth, setIsAuth, login,setLogin,handleGet,userData,component,setComponent,setLoading,loading
+
+   isAuth, setIsAuth, login,setLogin,handleGet,userData,component,setComponent,setLoading,loading,setPage,page,message,setMessage,error,setError
 
   }}>
    {/* The below makes the value to be made available for all the children have access to it */}

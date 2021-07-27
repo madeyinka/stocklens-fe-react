@@ -18,6 +18,7 @@ import StationCreate from '../components/station/StationCreate'
 import StationModify from '../components/station/StationModify'
 import UserRoute from './UserRoute'
 import Loading from './Loading'
+import FormType from './FormType'
 
 
 const url = 'https://stocklens.herokuapp.com/stock-lens/api/1.0';
@@ -34,7 +35,7 @@ axios.interceptors.request.use(
 )
 
 const Dashboard = () => {
- const {login,handleGet,userData,component,loading}  = useContext(AppContext);
+ const {login,handleGet,userData,component,loading,page,setPage}  = useContext(AppContext);
  const {id,ago_meter,ago_tank, dpk_meter, pms_meter,pms_tank, station,username} = userData;
  const history = useHistory();
 
@@ -49,9 +50,10 @@ const Dashboard = () => {
  //   console.log(res.data);
  //  })
  // }
+
     if (loading) {
         return (
-            <main>
+            <main className="d-flex align-items-center justify-content-center">
                 <Loading />
             </main>
         )
@@ -62,13 +64,14 @@ const Dashboard = () => {
     <Header />
  <div className="row">
  <div className="col-md-3">
- <Sidebar />
+                     <Sidebar className="position-absolute top-0 start-0" />
  </div>
  <div className="col-md-9">
      <div className="stocklens-view">
      
        {/* {component} */}
-       <UserRoute station={station} />
+       {/* <UserRoute station={station} /> */}
+       <FormType />
        {/* <Link to="userroute">
        Link
        </Link> */}
