@@ -2,7 +2,7 @@ import React,{useContext} from 'react'
 import AppContext from '../context/app-context'
 
 const Sidebar = () => {
- const {component, setComponent,setPage} = useContext(AppContext)
+ const {component, setComponent,setPage,setLogin} = useContext(AppContext)
  
  
  return (
@@ -45,6 +45,11 @@ const Sidebar = () => {
       </li>
       <li className="sidebar-list" onClick={() => { setPage("userroutes") }}>
         UserRoutes
+      </li>
+      <li className="sidebar-list" onClick={() => { localStorage.removeItem('accesstoken');
+    setLogin(false)
+    }}>
+        LOGOUT
       </li>
      </ul>
 

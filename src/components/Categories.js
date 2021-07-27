@@ -17,16 +17,22 @@ const handleSubmition = () => {
  try {
   setLoading(true);
      axios.post(`${url}/`, { label, description }).then((res) => {
-               console.log(res.data.error)
+               console.log(res.data)
                if(res.data.error === true) {
                 setLoading(false) 
                 setError(true);
                 setPage("response");
                 setMessage(res.data.message)
                }
+               else if(res.data.error === false) {
+                setLoading(false);
+                setError(false);
+                setPage("response")
+                setMessage(res.data.message);
+               }
               
               setLoading(false) 
-              setMessage(res.data.response[0])
+              // setMessage(res.data.response[0])
               })
  } catch (error) {
   setLoading(false);

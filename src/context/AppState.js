@@ -16,7 +16,7 @@ axios.interceptors.request.use(
 )
 const AppState = (props) => {
  const [isAuth, setIsAuth] = useState(true);
- const [login, setLogin] = useState(true);
+ const [login, setLogin] = useState(false);
  const [loading, setLoading] = useState(false);
  const [page,setPage] = useState("default");
  const [message,setMessage] = useState('');
@@ -33,7 +33,7 @@ const AppState = (props) => {
  }
  return (
   <AppContext.Provider value={{
-    
+
    isAuth, setIsAuth, login,setLogin,handleGet,userData,component,setComponent,setLoading,loading,setPage,page,message,setMessage,error,setError
 
   }}>
