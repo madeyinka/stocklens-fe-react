@@ -63,25 +63,25 @@ const Header = () => {
                  <h5 className="font-size-14" key="t-ui-components">UI Components</h5>
                  <ul className="list-unstyled megamenu-list">
                   <li>
-                   <a href="javascript:void(0);" key="t-lightbox">Lightbox</a>
+                   <a href="#" key="t-lightbox">Lightbox</a>
                   </li>
                   <li>
-                   <a href="javascript:void(0);" key="t-range-slider">Range Slider</a>
+                   <a href="#" key="t-range-slider">Range Slider</a>
                   </li>
                   <li>
-                   <a href="javascript:void(0);" key="t-sweet-alert">Sweet Alert</a>
+                   <a href="#" key="t-sweet-alert">Sweet Alert</a>
                   </li>
                   <li>
-                   <a href="javascript:void(0);" key="t-rating">Rating</a>
+                   <a href="#" key="t-rating">Rating</a>
                   </li>
                   <li>
-                   <a href="javascript:void(0);" key="t-forms">Forms</a>
+                   <a href="#" key="t-forms">Forms</a>
                   </li>
                   <li>
-                   <a href="javascript:void(0);" key="t-tables">Tables</a>
+                   <a href="#" key="t-tables">Tables</a>
                   </li>
                   <li>
-                   <a href="javascript:void(0);" key="t-charts">Charts</a>
+                   <a href="#" key="t-charts">Charts</a>
                   </li>
                  </ul>
                 </div>
@@ -90,22 +90,22 @@ const Header = () => {
                  <h5 className="font-size-14" key="t-applications">Applications</h5>
                  <ul className="list-unstyled megamenu-list">
                   <li>
-                   <a href="javascript:void(0);" key="t-ecommerce">Ecommerce</a>
+                   <a href="#" key="t-ecommerce">Ecommerce</a>
                   </li>
                   <li>
-                   <a href="javascript:void(0);" key="t-calendar">Calendar</a>
+                   <a href="#" key="t-calendar">Calendar</a>
                   </li>
                   <li>
-                   <a href="javascript:void(0);" key="t-email">Email</a>
+                   <a href="#" key="t-email">Email</a>
                   </li>
                   <li>
-                   <a href="javascript:void(0);" key="t-projects">Projects</a>
+                   <a href="#" key="t-projects">Projects</a>
                   </li>
                   <li>
-                   <a href="javascript:void(0);" key="t-tasks">Tasks</a>
+                   <a href="#" key="t-tasks">Tasks</a>
                   </li>
                   <li>
-                   <a href="javascript:void(0);" key="t-contacts">Contacts</a>
+                   <a href="#" key="t-contacts">Contacts</a>
                   </li>
                  </ul>
                 </div>
@@ -114,25 +114,25 @@ const Header = () => {
                  <h5 className="font-size-14" key="t-extra-pages">Extra Pages</h5>
                  <ul className="list-unstyled megamenu-list">
                   <li>
-                   <a href="javascript:void(0);" key="t-light-sidebar">Light Sidebar</a>
+                   <a href="#" key="t-light-sidebar">Light Sidebar</a>
                   </li>
                   <li>
-                   <a href="javascript:void(0);" key="t-compact-sidebar">Compact Sidebar</a>
+                   <a href="#" key="t-compact-sidebar">Compact Sidebar</a>
                   </li>
                   <li>
-                   <a href="javascript:void(0);" key="t-horizontal">Horizontal layout</a>
+                   <a href="#" key="t-horizontal">Horizontal layout</a>
                   </li>
                   <li>
-                   <a href="javascript:void(0);" key="t-maintenance">Maintenance</a>
+                   <a href="#" key="t-maintenance">Maintenance</a>
                   </li>
                   <li>
-                   <a href="javascript:void(0);" key="t-coming-soon">Coming Soon</a>
+                   <a href="#" key="t-coming-soon">Coming Soon</a>
                   </li>
                   <li>
-                   <a href="javascript:void(0);" key="t-timeline">Timeline</a>
+                   <a href="#" key="t-timeline">Timeline</a>
                   </li>
                   <li>
-                   <a href="javascript:void(0);" key="t-faqs">FAQs</a>
+                   <a href="#" key="t-faqs">FAQs</a>
                   </li>
 
                  </ul>
@@ -145,25 +145,25 @@ const Header = () => {
                  <h5 className="font-size-14" key="t-ui-components">UI Components</h5>
                  <ul className="list-unstyled megamenu-list">
                   <li>
-                   <a href="javascript:void(0);" key="t-lightbox">Lightbox</a>
+                   <a href="#" key="t-lightbox">Lightbox</a>
                   </li>
                   <li>
-                   <a href="javascript:void(0);" key="t-range-slider">Range Slider</a>
+                   <a href="#" key="t-range-slider">Range Slider</a>
                   </li>
                   <li>
-                   <a href="javascript:void(0);" key="t-sweet-alert">Sweet Alert</a>
+                   <a href="#" key="t-sweet-alert">Sweet Alert</a>
                   </li>
                   <li>
-                   <a href="javascript:void(0);" key="t-rating">Rating</a>
+                   <a href="#" key="t-rating">Rating</a>
                   </li>
                   <li>
-                   <a href="javascript:void(0);" key="t-forms">Forms</a>
+                   <a href="#" key="t-forms">Forms</a>
                   </li>
                   <li>
-                   <a href="javascript:void(0);" key="t-tables">Tables</a>
+                   <a href="#" key="t-tables">Tables</a>
                   </li>
                   <li>
-                   <a href="javascript:void(0);" key="t-charts">Charts</a>
+                   <a href="#" key="t-charts">Charts</a>
                   </li>
                  </ul>
                 </div>
@@ -212,26 +212,26 @@ const Header = () => {
                <div className="dropdown-menu dropdown-menu-end">
 
                 
-                                <a href="javascript:void(0);" className="dropdown-item notify-item language" data-lang="en">
+                                <a href="#" className="dropdown-item notify-item language" data-lang="en">
                  {/* <img src="assets/images/flags/us.jpg" alt="user-image" className="me-1" height="12"> <span className="align-middle">English</span> */}
                                 </a>
                  
-                                <a href="javascript:void(0);" className="dropdown-item notify-item language" data-lang="sp">
+                                <a href="#" className="dropdown-item notify-item language" data-lang="sp">
                   {/* <img src="assets/images/flags/spain.jpg" alt="user-image" className="me-1" height="12"> <span className="align-middle">Spanish</span> */}
                                 </a>
 
                   
-                                <a href="javascript:void(0);" className="dropdown-item notify-item language" data-lang="gr">
+                                <a href="#" className="dropdown-item notify-item language" data-lang="gr">
                    {/* <img src="assets/images/flags/germany.jpg" alt="user-image" className="me-1" height="12"> <span className="align-middle">German</span> */}
                                 </a>
 
                    
-                                <a href="javascript:void(0);" className="dropdown-item notify-item language" data-lang="it">
+                                <a href="#" className="dropdown-item notify-item language" data-lang="it">
                     {/* <img src="assets/images/flags/italy.jpg" alt="user-image" className="me-1" height="12"> <span className="align-middle">Italian</span> */}
                                 </a>
 
                     
-                                <a href="javascript:void(0);" className="dropdown-item notify-item language" data-lang="ru">
+                                <a href="#" className="dropdown-item notify-item language" data-lang="ru">
                      {/* <img src="assets/images/flags/russia.jpg" alt="user-image" className="me-1" height="12"> <span className="align-middle">Russian</span> */}
                                 </a>
                             </div>
@@ -313,8 +313,8 @@ const Header = () => {
                              </div>
                             </div>
                            </div>
-                           <div data-simplebar style={{"max-height": "230px"}}>
-                            <a href="javascript: void(0);" className="text-reset notification-item">
+                           <div data-simplebar style={{"maxHeight": "230px"}}>
+                            <a href="j#" className="text-reset notification-item">
                              <div className="d-flex">
                               <div className="avatar-xs me-3">
                                <span className="avatar-title bg-primary rounded-circle font-size-16">
@@ -330,7 +330,7 @@ const Header = () => {
                               </div>
                              </div>
                             </a>
-                            <a href="javascript: void(0);" className="text-reset notification-item">
+                            <a href="j#" className="text-reset notification-item">
                              <div className="d-flex">
                               {/* <img src="assets/images/users/avatar-3.jpg" */}
                                className="me-3 rounded-circle avatar-xs" alt="user-pic">
@@ -343,7 +343,7 @@ const Header = () => {
                                </div>
                                         </div>
                                     </a>
-                             <a href="javascript: void(0);" className="text-reset notification-item">
+                             <a href="j#" className="text-reset notification-item">
                               <div className="d-flex">
                                <div className="avatar-xs me-3">
                                 <span className="avatar-title bg-success rounded-circle font-size-16">
@@ -360,7 +360,7 @@ const Header = () => {
                               </div>
                              </a>
 
-                             <a href="javascript: void(0);" className="text-reset notification-item">
+                             <a href="j#" className="text-reset notification-item">
                               <div className="d-flex">
                                {/* <img src="assets/images/users/avatar-4.jpg" */}
                                 className="me-3 rounded-circle avatar-xs" alt="user-pic">
@@ -375,7 +375,7 @@ const Header = () => {
                                     </a>
                                 </div>
                              <div className="p-2 border-top d-grid">
-                              <a className="btn btn-sm btn-link font-size-14 text-center" href="javascript:void(0)">
+                              <a className="btn btn-sm btn-link font-size-14 text-center" href="#">
                                <i className="mdi mdi-arrow-right-circle me-1"></i> <span key="t-view-more">View More..</span>
                               </a>
                              </div>

@@ -66,7 +66,9 @@ axios.post(`${url}`, {identity,label,state,region}).then((res) => {
      <input type="text" placeholder="Region" className="form-control" value={region} onChange={handleRegion} />
   
   </div>
-  <button className="btn btn-primary mb-3" onClick={handleBranchSub}>
+  <button className="btn btn-primary mb-3" onClick={handleBranchSub}
+             style={{ width: '10rem', height: 'auto', marging: 'auto !important' }}
+  >
   Submit
   </button>
   

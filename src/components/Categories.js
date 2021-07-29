@@ -13,7 +13,8 @@ const handleDesc = (e) => {
 const handleLabel = (e) => {
  setLabel(e.target.value);
 }
-const handleSubmition = () => {
+const handleSubmition = (e) => {
+ e.preventDefault();
  try {
   setLoading(true);
      axios.post(`${url}/`, { label, description }).then((res) => {

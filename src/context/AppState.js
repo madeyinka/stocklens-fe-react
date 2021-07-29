@@ -27,7 +27,7 @@ const AppState = (props) => {
  const [userData, setUserData] = useState('');
  const handleGet = () => {
   axios.get(`${baseurl}/auth/userContext`).then((res) => {
-   console.log(res.data.response);
+   // console.log(res.data.response);
    setUserData(res.data.response);
   })
  }
