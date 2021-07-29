@@ -62,7 +62,8 @@ const [isAdmin, setIsAdmin] = useState(false);
   setIsAdmin(e.target.value)
  }
 
- const handleSubmit = () => {
+ const handleSubmit = (e) => {
+   e.preventDefault();
   axios.post(`${url}`, { identity, fname,lname,phone,email,password,role,status,image_url,station_id,isAdmin,profile }).then((res) => {
    console.log(res.data);
   })
@@ -173,7 +174,9 @@ const [isAdmin, setIsAdmin] = useState(false);
    </div>
    </div>
    </div>
-    <button className="btn btn-primary mb-5 py-3" onClick={handleSubmit}>
+    <button className="btn btn-primary mb-5 py-3" onClick={handleSubmit}
+         style={{ width: '10rem', height: 'auto', marging: 'auto !important' }}
+    >
      Submit
   </button>
 
